@@ -12,10 +12,10 @@
     <li>CSS</li>
     <li>JavaScript</li>
 </ul>
-<hr>
+<h1></h1>
 <p align="justfy">O nome da calculadora é uma brincadeira com uma colega de trabalho que ficava muito estressada na hora de fazer esses cálculos...</p>
 <div style="text-align: center;"><img style=" display: inline; border-radius:5px;width:230px" src=".github/img02.png"></div>
 
-<hr>
+<h1></h1>
 #cristress
 
