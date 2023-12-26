@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/supernutre_icone.ico">
+    <script src="scripts/js.js" defer></script>
+    <title>CriStress</title>
+</head>
+
+<body>
+    <div class="linha espaco_entre">
+        <div class="topo coluna">
+            <div class="cris">CriStress</div>
+            <div class="titulo">* CALCULADORA DE ESTRESSE *</div>
+        </div>
+        <div class="container" style="margin-top: 20px;">
+            <form id="form">
+                <div class="moldura legenda_top">FARDO</div>
+                <div class="moldura largura_600 inferior_60 bg">
+                    <div class="bloco">
+                        <div class="entrada">
+                            <input type="text" id="ipacote" onkeyup="verifica_digito(ipacote); peso()" placeholder="P">
+                        </div>
+                        <div class="legenda">PRODUTOS</div>
+                    </div>
+                    <div class="fonte_grande">x</div>
+                    <div class="bloco">
+                        <div class="entrada">
+                            <input type="text" id="igrama" onkeyup="verifica_digito(igrama); grama()" placeholder="G">
+                        </div>
+                        <div class="legenda">GRAMA</div>
+                    </div>
+
+                    <div class="bloco">
+                        <div class="entrada">
+                            <input type="text" id="iquilo" onkeyup="verifica_digito(iquilo); quilo()" placeholder="KG">
+                        </div>
+                        <div class="legenda">QUILO</div>
+                    </div>
+                </div>
+                <div class="moldura legenda_top">QUANTIDADE / PESO DE FARDOS</div>
+                <div class="moldura largura_600 inferior_60 bg">
+                    <div class="moldura largura_200">
+                        <div class="bloco">
+                            <div class="entrada">
+                                <input type="text" id="icaixa" onkeyup="verifica_digito(icaixa); peso()"
+                                    placeholder="Q">
+                            </div>
+                            <div class="legenda">QUANTIDADE</div>
+                        </div>
+                        <div class="fonte_grande">&nbsp;=&nbsp;</div>
+                        <div class="bloco">
+                            <div class="entrada">
+                                <input type="text" id="itotal" onkeyup="verifica_digito(itotal); alterar_quantidade()"
+                                    placeholder="KG">
+                            </div>
+                            <div class="legenda">PESO (KG)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moldura largura_600 inferior_60">
+                    <div class="bt">
+                        <input type="button" value="LIMPAR FORMULÁRIO" onclick="limpar_formulario()" class="bt">
+                    </div>
+                </div>
+                <div class="moldura largura_600 monitor" id="monitor">
+                    <div class="coluna">
+                        <div class="resumo_bold">
+                            <label id="resposta2"></label>
+                        </div>
+                        <div class="resumo">
+                            <label id="resposta1"></label>
+                        </div>
+                        <div class="resumo">
+                            <label id="resposta3"></label>
+                        </div>
+                        <div class="resumo">
+                            <label id="resposta4" class="bold"></label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="topo coluna">
+            <div class="logo"><img src="img/Supernutre (1).png" width="174px" height="50px"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
